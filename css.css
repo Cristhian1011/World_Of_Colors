@@ -1,0 +1,288 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color:#3E3836;
+    display:inline-block;
+}
+
+header {
+    background-image: url('imagenes/fondo\ del\ encabezado.png');
+    background-size: cover;
+    background-position: center; 
+    height: 4.5rem;
+    align-items: center;
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    width: 100%;
+}
+   
+header .Test{
+    border-radius: 10px;
+    padding: 1.4em 3em; 
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border:none;
+    cursor: pointer;
+    color: #FFF;
+    background-color:#7B7269;   
+    display: inline-block; 
+    z-index: 2;
+    transition: all 0.5s;
+    
+}
+@media screen and (max-width: 768px) {
+    header .Test {
+        top: 20%;
+        left: 35%;
+        width: 30%;  
+    }
+}
+
+header .Inicio{
+    border-radius: 10px;
+    padding: 1.4em 2.5em; 
+    position: absolute;
+    top: 10%;
+    left: 1%;
+    border:none;
+    cursor: pointer;
+    color: #FFF;
+    background-color:#7B7269;   
+    display: inline-block; 
+    z-index: 2;
+    transition: all 0.5s;
+}
+@media screen and (max-width: 768px) {
+    header .Inicio {
+        top: 20%;
+        left: 1%;
+        width: 30%; 
+    }
+}
+
+
+.Test:hover, .Inicio:hover{
+    background-color: #BEA8A8;  
+    transform: scale(1.2);
+}
+
+.zoom-acercar {  
+    position: absolute;
+    top: 5%;
+    left: 87%;
+    width: 60px;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+    header .zoom-acercar {
+        top: 20%;
+        left: 80%;
+        width: 8%; 
+    }
+}
+header .zoom-alejar{
+    position: absolute;
+    top: 5%;
+    left: 93%;
+    width: 60px;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.5s;
+}
+@media screen and (max-width: 768px) {
+    header .zoom-alejar {
+        top: 20%;
+        left: 90%;
+        width: 8%; 
+    }
+}
+.zoom-acercar:hover, .zoom-alejar:hover{
+    transform: scale(1.2);
+}
+
+
+#seccion1 {
+    height: 100vh;
+    width: 97vw;
+}
+
+#seccion1::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('imagenes/fondo.png');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+
+}
+
+
+#seccion1 .Titulo {
+    transform: translate(-50%, -50%);
+    text-align: center;
+    position: absolute;
+    top: 40%; 
+    left: 50%;
+    color: #EBDCC4;
+    font-size: 4vw; 
+    margin: 0;
+    transition: all 0.5s;
+}
+
+#seccion1 .Subtitulo {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 60%; 
+    left: 50%;
+    font-size: 1.5vw; 
+    color: #EBDCC4;
+    transition: all 0.5s;
+    margin: 0;
+}
+
+#seccion1 .LeerMas {
+    border-radius: 10px;
+    padding: 1.3% 2.5%;
+    position: absolute;
+    top: 80%; 
+    left: 50%;
+    color: #FFDAB9;
+    background: #3E3836;
+    font-size: 2vw; 
+    transform: translate(-50%, -50%);
+    transition: all 0.7s;
+}
+
+#seccion1 .LeerMas:hover{
+    background-color: #563737;  
+    margin-top: 8px;
+}
+
+
+
+#seccion2 {
+    height: 100%;
+    width: 97vw;
+}
+
+#seccion2::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('imagenes/fondo2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+#seccion2 #Titulo {
+    width: 50%;
+    margin: 0;
+    border-radius: 10px;
+    position: absolute;
+    top: 130%;
+    left: 30%;
+    height: 20%;
+    transform: translate(-50%, -50%);
+
+}
+
+#seccion2 #Texto {
+    border-radius: 10px;
+    padding: 1%;
+    width: 57%; 
+    height: auto;
+    position: absolute;
+    top: 145%; 
+    left: 3%; 
+    font-size: 1.5vw;
+    color: #FFFF;
+    background-color: #3E3836;
+    overflow: hidden;
+    transition: all 0.5s;
+
+}
+
+
+#seccion2 #imagen_daltonismo {
+    border-radius: 10px;
+    position: absolute;
+    top: 128%;
+    left: 63%;
+    width: 35%; 
+    height: auto;
+}
+
+#seccion2 #credits1 {
+    position: absolute;
+    top: 178%;
+    left: 86%; 
+    width: 12%;
+    height: 2%;
+}
+
+#seccion2 #boton_tipos_daltonismo {
+    width: 25%;
+    position: absolute;
+    top: 180%;
+    left: 70%;
+    color: #FFDAB9;
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+#seccion2 #Titulo {
+    width: 70%;
+    height: 10%;
+    transform: translate(-20%, -130%);
+}
+
+#seccion2 #imagen_daltonismo {
+    width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+    #seccion2 #Texto {
+    width: 70%;
+    height: 20%;
+    transform: translate(14%, 50%);
+    font-size: 1.5vh;
+
+}
+
+    #seccion2 #credits1 {
+        left: 50%;
+        transform: translate(-50%, -1300%);
+        width: 40%;
+    }
+
+    #seccion2 #boton_tipos_daltonismo {
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+#seccion2 #boton_tipos_daltonismo:hover {
+    transform: scale(1.1);
+}
+
+
+
